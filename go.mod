@@ -1,4 +1,4 @@
-module github.com/pasqualepunzo/corefactorylib
+module github.com/pasqualepunzo/efm4retail
 
 go 1.18
 
