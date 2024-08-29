@@ -519,10 +519,9 @@ func ApiCallDELETE(ctx context.Context, debug string, args map[string]string, mi
 		resStruct.Errore = -1
 		resStruct.Log = err.Error()
 	} else {
-		if res.StatusCode() != 205 {
+		if res.StatusCode() != 205 && res.StatusCode() != 200 {
 			resStruct.Errore = -1
 			resStruct.Log = "Cannot delete the record"
-
 		} else {
 
 			var restyPOSTRes restyPOSTStruct
